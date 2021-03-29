@@ -1,5 +1,5 @@
 {
-  "name": "websolute/magento-cron-semaphore",
+  "name": "websolutespa/magento-cron-semaphore",
   "description": "This Magento 2 Module allows you to suspend and resume the cron execution programmatically",
   "type": "magento2-module",
   "require": {
