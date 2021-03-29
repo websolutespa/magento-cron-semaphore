@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright © Websolute spa. All rights reserved.
+  ~ See LICENSE and/or COPYING.txt for license details.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Websolute\CronSemaphore\Api\CronSempahoreManagerInterface"
+                type="Websolute\CronSemaphore\Model\CronSempahoreManager"/>
+    <type name="Magento\Framework\App\Cron">
+        <plugin name="cron_launch_check"
+                type="Websolute\CronSemaphore\Plugin\Cron"/>
+    </type>
+<!--    <type name="Magento\Framework\Console\CommandListInterface">-->
+<!--        <arguments>-->
+<!--            <argument name="commands" xsi:type="array">-->
+<!--                <item name="cronSemaphore" xsi:type="object">Websolute\CronSemaphore\Console\Command\CronSemaaphoreCommand</item>-->
+<!--            </argument>-->
+<!--        </arguments>-->
+<!--    </type>-->
+</config>
